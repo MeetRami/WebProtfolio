@@ -20,6 +20,43 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+  
+  <!--Custom style for submit button -->
+  <style>
+	.btn {
+		border: none;
+		color: white;
+		padding: 8px 24px;
+		font-size: 18px;
+		cursor: pointer;
+	}
+	.submit {background-color: #bd5d38; color: black;} /* Primary */ 
+	.submit:hover {background: #bd5d38;}
+  </style>
+  
+    <!--Custom style for contact form -->
+	<style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+		* {box-sizing: border-box;}
+
+		input[type=text], input[type=email], select, textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical;
+		}
+		
+		.container {
+		border-radius: 5px;
+		padding: 20px;
+		}
+	</style>
+
+
 
 </head>
 
@@ -75,16 +112,16 @@
         <p class="lead mb-5">My current objective is to obtain an internship or research opportunity that will allow me to utilize my problem solving skills and attention to detail to further develop my abilities in the field of computer science.</p>
         <p class="lead mb-5">I am currently looking for an internship in software developer field.</p>
 		<div class="social-icons">
-          <a href="https://www.linkedin.com/in/meet-rami-3b7283120/">
+          <a target="_blank" href="https://www.linkedin.com/in/meet-rami-3b7283120/">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/MeetRami">
+          <a target="_blank" href="https://github.com/MeetRami">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://www.instagram.com/meetrams45/?hl=en">
+          <a target="_blank" href="https://www.instagram.com/meetrams45/?hl=en">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://www.facebook.com/meet.rami.58">
+          <a target="_blank" href="https://www.facebook.com/meet.rami.58">
             <i class="fab fa-facebook-f"></i>
           </a>
         </div>
@@ -252,36 +289,24 @@
 	<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
 		<div class="w-100">
 		  <h2 class="mb-5">Contact Me</h2>
-		  <div class="col-md-4">
-            <label for="name-id" class="required"> <span>Full name*</span>
-              <input type="text" class="input_text" name="name" id="name" required placeholder="Enter Your Name">
-            </label><br><br>
+		  <div class="container">
+		  <form action="#">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+			<label for="country">Email</label>
+			<input type="email" id="mail" name="email" placeholder="something@email.com.." required>
+			
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+			<button class="btn submit">Submit</button>
+		  </form>
 		  </div>
-		  <div class="col-md-4">
-            <label for="email-id" class="required"> <span>Email*    </span>
-              <input type="text" class="input_text" name="email" id="email" required placeholder="Enter Your Email">
-            </label><br><br>
-		  </div>
-		  <div class="col-md-4">
-            <label for="subject-id" class="required"> <span>Subject*</span>
-              <input type="text" class="input_text" name="subject" id="subject" required placeholder="Enter Your Subject" maxlength="35">
-            </label><br><br>
-		  </div>
-		  <div class="col-md-12">
-            <label for="message-id" class="required"> <span>Message</span>
-            <textarea class="message" name="feedback" id="feedback" required placeholder="Enter short Message"></textarea>
-			</label><br><br>
-		  </div>
-		  <div class="col-md-12">
-		    <div class="submit">
-			<a href="#" class="largeButton contactBgColor">Submit</a>
-			</div>
-		  </div>
-            
-        </form>
 		</div>
 	</section>
-
   </div>
 
   <!-- Bootstrap core JavaScript -->
