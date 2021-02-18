@@ -1,5 +1,6 @@
 const projects = [
 				{
+					id:0,
 					name: "Inventory Management",
 					photo:"img/projImg/inventory.jpg",
 					description:"This project is still in progress. The goal of the project is to create a web application where store manager can login using their credentials\
@@ -9,6 +10,7 @@ const projects = [
 					problems:"Currently I am implementing micro-service to maximize longterm use of this application in professional environment"
 				},
 				{
+					id:1,
 					name: "Boutit.com",
 					photo:"img/projImg/boutit.jpg",
 					description:"Using scrum methodology for project management me and my team created three web applications from scratch in a\
@@ -21,6 +23,7 @@ const projects = [
 							  in previous scrum cycle"
 				},
 				{
+					id:2,
 					name: "Exam Website",
 					photo:"img/projImg/examweb.jpg",
 					description:"This exam website would let professor or teacher create an exam, using existing questions stored in database by their credentials\
@@ -32,6 +35,7 @@ const projects = [
 					problems:"Initially we struggle getting the connection setup using cURL, once that was done everything went smooth as planned; Learnign cRUL was also challenging"
 				},
 				{
+					id:3,
 					name: "House Game",
 					photo:"img/projImg/housegame.jpg",
 					description:"This project utilizes Linked list data structure and generic linked bag.\
@@ -40,6 +44,17 @@ const projects = [
 								This project has many game implementations, one of them is to create a game, collect most points in fewer steps.",
 					techUsed:"Java",
 					problems:"Using generic class and collection framework for the first time and managing object orientation"
+				},
+				{
+					id:4,
+					name: "Calculator Application",
+					photo:"img/projImg/calcapp.jpg",
+					description:"This project utilizes Linked list data structure and generic linked bag.\
+								In this project you will travel to different locations in a house and using singly linked list all the houses are mapped.\
+								Based on where you are in a house, program will give you available options to choose from and move forward.\
+								This project has many game implementations, one of them is to create a game, collect most points in fewer steps.",
+					techUsed:"HTML5, CSS, JavaScript(Vanilla)",
+					problems:"Creating UI based in UX provided by client in pdf format; some features difficult to implement"
 				}
 ];
 
@@ -76,6 +91,9 @@ function showcase(ele){
 	`
 };
 
+
+//${projects.map(showcase).join('')}
 document.getElementById("project").innerHTML = `
+
 ${projects.map(showcase).join('')}
 `
