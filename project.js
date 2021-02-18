@@ -49,10 +49,8 @@ const projects = [
 					id:4,
 					name: "Calculator Application",
 					photo:"img/projImg/calcapp.jpg",
-					description:"This project utilizes Linked list data structure and generic linked bag.\
-								In this project you will travel to different locations in a house and using singly linked list all the houses are mapped.\
-								Based on where you are in a house, program will give you available options to choose from and move forward.\
-								This project has many game implementations, one of them is to create a game, collect most points in fewer steps.",
+					description:"This project is based on Mobile first approach.\
+								In this project you will have basic fully functional calculator along with other options to choose from hamburger on top.",
 					techUsed:"HTML5, CSS, JavaScript(Vanilla)",
 					problems:"Creating UI based in UX provided by client in pdf format; some features difficult to implement"
 				}
